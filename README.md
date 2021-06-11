@@ -29,9 +29,13 @@
   '커튼', '샤워커튼', '블라인드'
 ```
 
+---
+
 **Work Flow**
 
 ![1](https://user-images.githubusercontent.com/62659407/121677965-87404f80-caf1-11eb-9c23-2248f7cc5166.png)
+
+---
 
 **Prototype**
 
@@ -40,25 +44,31 @@
 <img src="https://user-images.githubusercontent.com/62659407/121678434-25341a00-caf2-11eb-84c1-3e4767bd41aa.png" width="70%">
 <img src="https://user-images.githubusercontent.com/62659407/121678565-498ff680-caf2-11eb-8458-e73701109e53.png" width="60%">
 
+
 - "야자로 만든 의자" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "라탄 암체어" 출력
 
-<img src="https://user-images.githubusercontent.com/62659407/121678603-544a8b80-caf2-11eb-8d55-1f527b27dbf6.png" width="70%">
+<img src="https://user-images.githubusercontent.com/62659407/121678603-544a8b80-caf2-11eb-8d55-1f527b27dbf6.png" width="60%">
 <img src="https://user-images.githubusercontent.com/62659407/121678636-60364d80-caf2-11eb-9ca3-ab4148c00be7.png" width="60%">
+
 
 - "가죽으로 만든 소파" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "가죽소파" 출력
 
-<img src="https://user-images.githubusercontent.com/62659407/121678684-70e6c380-caf2-11eb-9c9e-e6775e3b4a7b.png" width="70%">
+
+<img src="https://user-images.githubusercontent.com/62659407/121678684-70e6c380-caf2-11eb-9c9e-e6775e3b4a7b.png" width="60%">
 <img src="https://user-images.githubusercontent.com/62659407/121678656-662c2e80-caf2-11eb-9ba4-34d68d883910.png" width="60%">
 
 - "매트리스 침대" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "디반침대" 출력
 
-<img src="https://user-images.githubusercontent.com/62659407/121678746-865bed80-caf2-11eb-9cf8-f1104e1885e7.png" width="70%">
+
+<img src="https://user-images.githubusercontent.com/62659407/121678746-865bed80-caf2-11eb-9cf8-f1104e1885e7.png" width="60%">
 <img src="https://user-images.githubusercontent.com/62659407/121678771-8cea6500-caf2-11eb-98f8-36f301bd015f.png" width="60%">
 
 
+---
+
 **가출원 신청**
 
-![KakaoTalk_20210609_215541554](https://user-images.githubusercontent.com/62659407/121677988-8efff400-caf1-11eb-8137-239e3789af4b.png)
+<img src="https://user-images.githubusercontent.com/62659407/121677988-8efff400-caf1-11eb-8137-239e3789af4b.png" width="40%">
 
 
 ---
