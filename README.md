@@ -111,6 +111,23 @@
   + sklearn.neighbors.KNeighborsClassifier()를 통해 사용자가 입력한 패턴 이미지(GoogleNet 모델을 transfer learning한 CNN 모델로 feature 추출)와 기존에 가지고 있는 4000여장의 패턴 이미지(CV_furniture/DTD/) feature 중 유사한 패턴 이미지 4개 추출 → 총 5개의 패턴 사용
   + yolov5와 cv2.grabCut()을 이용해 입력 데이터의 가구 이미지에서 가구 인식의 효율을 높이기 위해 배경 제거
   + ORB 기술(Oriented FAST and Rotated BRIEF)과 BFMatcher 기술을 이용해 위에서 구한 5개의 패턴과 배경이 제거된 가구 이미지 벡터 비교 → 다수의 비슷한 벡터가 추출된다면 해당 패턴을 가지고 있는 가구로 판단하여 최종 결과물로 출력
+  + 
+
+- GoogleNet 모델 정확도
+
+<img src = "https://user-images.githubusercontent.com/62659407/121727147-7bbb4b80-cb26-11eb-878c-c6a35fa9b997.png" width="30%">
+
+```
+  76%
+```
+
+- 사용자가 입력한 패턴과 유사 패턴 유사도
+
+<img src="https://user-images.githubusercontent.com/62659407/121727175-870e7700-cb26-11eb-9791-9415fcc5564e.png" width="30%">
+
+```
+  83.57%
+```
 
 ---
 
