@@ -69,3 +69,19 @@
   + ORB 기술(Oriented FAST and Rotated BRIEF)과 BFMatcher 기술을 이용해 위에서 구한 5개의 패턴과 배경이 제거된 가구 이미지 벡터 비교 → 다수의 비슷한 벡터가 추출된다면 해당 패턴을 가지고 있는 가구로 판단하여 최종 결과물로 출력
 
 ---
+
+## Django를 이용해 프론트엔드 + 백엔드(NLP와 CV 모델 결합) 웹 구현(anything_site)
+
+- 개요
+  + Django를 이용해 위 과정을 결합해 백엔드 구현
+  + XD를 이용해 프론트엔드 구현
+  + 사용자가 텍스트와 패턴 이미지를 검색했을 때, 패턴 이미지가 있는 해당 가구의 이미지가 로드되는 웹 구현
+
+- 구현 사항
+  + anything_site/form/templates/main_page.html : HTML에서 form 기능을 이용해 사용자가 텍스트 및 이미지 업로드<br><br>
+  + CV.ipynb : 
+  + sklearn.neighbors.KNeighborsClassifier()를 통해 사용자가 입력한 패턴 이미지(GoogleNet 모델을 transfer learning한 CNN 모델로 feature 추출)와 기존에 가지고 있는 4000여장의 패턴 이미지(CV_furniture/DTD/) feature 중 유사한 패턴 이미지 4개 추출 → 총 5개의 패턴 사용
+  + yolov5와 cv2.grabCut()을 이용해 입력 데이터의 가구 이미지에서 가구 인식의 효율을 높이기 위해 배경 제거
+  + ORB 기술(Oriented FAST and Rotated BRIEF)과 BFMatcher 기술을 이용해 위에서 구한 5개의 패턴과 배경이 제거된 가구 이미지 벡터 비교 → 다수의 비슷한 벡터가 추출된다면 해당 패턴을 가지고 있는 가구로 판단하여 최종 결과물로 출력
+
+---
