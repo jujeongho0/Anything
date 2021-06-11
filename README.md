@@ -37,9 +37,9 @@
 
 - "화장실에 쓰는 커튼" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "샤워커튼" 출력
 
-![KakaoTalk_20210602_230635666](https://user-images.githubusercontent.com/62659407/121678434-25341a00-caf2-11eb-84c1-3e4767bd41aa.png){: width="100" height="100"}
+![KakaoTalk_20210602_230635666](https://user-images.githubusercontent.com/62659407/121678434-25341a00-caf2-11eb-84c1-3e4767bd41aa.png)
 
-![KakaoTalk_20210608_164205808](https://user-images.githubusercontent.com/62659407/121678565-498ff680-caf2-11eb-8458-e73701109e53.png){: width="100" height="100"}
+![KakaoTalk_20210608_164205808](https://user-images.githubusercontent.com/62659407/121678565-498ff680-caf2-11eb-8458-e73701109e53.png)
 
 
 - "야자로 만든 의자" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "라탄 암체어" 출력
