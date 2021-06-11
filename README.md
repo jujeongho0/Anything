@@ -57,14 +57,14 @@
 ## 사용자가 입력한 패턴이 있는 가구 이미지 추출 모델 구현(CV_furniture)
 
 - 개요
-  + 입력 데이터는 Google에서 웹 크롤링한 가구 이미지 중 NLP에서 추출된 가구의 이미지
+  + 입력 데이터는 Google에서 웹 크롤링한 가구 이미지(CV_furniture/images/) 중 NLP에서 추출된 가구의 이미지
   + 사용자가 입력한 패턴 + 유사 패턴 4개 추출 → 총 5개의 패턴으로 가구 이미지와 벡터 비교
   + 일정 기준 이상의 벡터가 발견되면 사용자가 입력한 패턴이 있는 가구로 판단해 최종 결과물로 출력
 
 - 구현 사항
   + image_webcrawling.ipynb : selenium 라이브러리와 Google 드라이버를 이용해 입력 데이터인 가구 이미지를 Google에서 웹 크롤링<br><br>
   + CV.ipynb : 
-  + sklearn.neighbors.KNeighborsClassifier()를 통해 사용자가 입력한 패턴 이미지(GoogleNet 모델을 transfer learning한 CNN 모델로 feature 추출)와 기존에 가지고 있는 4000여장의 패턴 이미지 feature 중 유사한 패턴 이미지 4개 추출 → 총 5개의 패턴 사용
+  + sklearn.neighbors.KNeighborsClassifier()를 통해 사용자가 입력한 패턴 이미지(GoogleNet 모델을 transfer learning한 CNN 모델로 feature 추출)와 기존에 가지고 있는 4000여장의 패턴 이미지(CV_furniture/DTD/) feature 중 유사한 패턴 이미지 4개 추출 → 총 5개의 패턴 사용
   + yolov5와 cv2.grabCut()을 이용해 입력 데이터의 가구 이미지에서 가구 인식의 효율을 높이기 위해 배경 제거
   + ORB 기술(Oriented FAST and Rotated BRIEF)과 BFMatcher 기술을 이용해 위에서 구한 5개의 패턴과 배경이 제거된 가구 이미지 벡터 비교 → 다수의 비슷한 벡터가 추출된다면 해당 패턴을 가지고 있는 가구로 판단하여 최종 결과물로 출력
 
