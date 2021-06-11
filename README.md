@@ -5,6 +5,8 @@
 
 **도전 과제명** : 가구산업 텍스트, 이미지 복합 검색 시스템 연구 및 개발
 
+**개발 동기** : 가구는 다양한 형태와 패턴이 존재한다. 찾고자 하는 가구가 있을 때 이를 검색하는 것은매우 어렵다. 따라서 자연어 처리 기술(NLP)과, 컴퓨터 비전 기술(CV)을 활용하여 본인이 원하는 형태와 패턴의 가구를 찾을 수 있는 가구 산업 텍스트, 이미지 복합 검색 시스템을 개발한다.
+
 **도전 목표** : 사용자가 텍스트와 이미지를 복합적으로 이용해 특정 패턴이 있는 가구를 검색할 수 있는 검색 엔진 개발
 
 **개요** : 
@@ -29,9 +31,43 @@
 
 **Work Flow**
 
+![1](https://user-images.githubusercontent.com/62659407/121677965-87404f80-caf1-11eb-9c23-2248f7cc5166.png)
+
 **Prototype**
 
+- "화장실에 쓰는 커튼" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "샤워커튼" 출력
+
+![KakaoTalk_20210602_230635666](https://user-images.githubusercontent.com/62659407/121678434-25341a00-caf2-11eb-84c1-3e4767bd41aa.png)
+
+![KakaoTalk_20210608_164205808](https://user-images.githubusercontent.com/62659407/121678565-498ff680-caf2-11eb-8458-e73701109e53.png)
+
+
+- "야자로 만든 의자" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "라탄 암체어" 출력
+
+![KakaoTalk_20210602_230636154](https://user-images.githubusercontent.com/62659407/121678603-544a8b80-caf2-11eb-8d55-1f527b27dbf6.png)
+
+![KakaoTalk_20210602_230636439](https://user-images.githubusercontent.com/62659407/121678636-60364d80-caf2-11eb-9ca3-ab4148c00be7.png)
+
+
+- "가죽으로 만든 소파" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "가죽소파" 출력
+
+![KakaoTalk_20210602_230637009](https://user-images.githubusercontent.com/62659407/121678684-70e6c380-caf2-11eb-9c9e-e6775e3b4a7b.png)
+
+![KakaoTalk_20210602_230635495](https://user-images.githubusercontent.com/62659407/121678656-662c2e80-caf2-11eb-9ba4-34d68d883910.png)
+
+
+- "매트리스 침대" + 특정 패턴 이미지 검색 → 특정 패턴 이미지가 있는 "디반침대" 출력
+
+![KakaoTalk_20210602_230636594](https://user-images.githubusercontent.com/62659407/121678746-865bed80-caf2-11eb-9cf8-f1104e1885e7.png)
+
+![KakaoTalk_20210608_164206584](https://user-images.githubusercontent.com/62659407/121678771-8cea6500-caf2-11eb-98f8-36f301bd015f.png)
+
+
 **가출원 신청**
+
+![KakaoTalk_20210609_215541554](https://user-images.githubusercontent.com/62659407/121677988-8efff400-caf1-11eb-8137-239e3789af4b.png)
+
+
 ---
    
 ## NLP를 이용해 가구 분류 모델 구현(NLP_BiGRU)
