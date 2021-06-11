@@ -27,6 +27,11 @@
   '커튼', '샤워커튼', '블라인드'
 ```
 
+**Work Flow**
+
+**Prototype**
+
+**가출원 신청**
 ---
    
 ## NLP를 이용해 가구 분류 모델 구현(NLP_BiGRU)
@@ -78,10 +83,17 @@
   + 사용자가 텍스트와 패턴 이미지를 검색했을 때, 패턴 이미지가 있는 해당 가구의 이미지가 로드되는 웹 구현
 
 - 구현 사항
-  + anything_site/form/templates/main_page.html : HTML에서 form 기능을 이용해 사용자가 텍스트 및 이미지 업로드<br><br>
-  + CV.ipynb : 
-  + sklearn.neighbors.KNeighborsClassifier()를 통해 사용자가 입력한 패턴 이미지(GoogleNet 모델을 transfer learning한 CNN 모델로 feature 추출)와 기존에 가지고 있는 4000여장의 패턴 이미지(CV_furniture/DTD/) feature 중 유사한 패턴 이미지 4개 추출 → 총 5개의 패턴 사용
-  + yolov5와 cv2.grabCut()을 이용해 입력 데이터의 가구 이미지에서 가구 인식의 효율을 높이기 위해 배경 제거
-  + ORB 기술(Oriented FAST and Rotated BRIEF)과 BFMatcher 기술을 이용해 위에서 구한 5개의 패턴과 배경이 제거된 가구 이미지 벡터 비교 → 다수의 비슷한 벡터가 추출된다면 해당 패턴을 가지고 있는 가구로 판단하여 최종 결과물로 출력
+  + anything_site/form/templates/main_page.html : HTML에서 form 기능을 이용해 사용자가 텍스트 및 패턴 이미지 업로드<br><br>
+  + anything_site/form/views.py : 
+  + request.POST를 이용해 전달받은 사용자가 입력한 텍스트를 NLP 모델을 통해 22개의 가구 카테고리 중 가장 유사한 특정 가구로 추출
+  + request.FILES를 이용해 전달받은 사용자가 입력한 패턴 이미지를 CV 모델을 통해 유사 패턴 이미지 추출 및 해당 패턴이 있는 가구 이미지 추출<br><br>
+  + anything_site/form/templates/searched_page.html : 
+  + 사용자가 입력한 텍스트 및 NLP 모델을 통해 추출된 가구 카테고리 로드
+  + 사용자가 입력한 패턴 이미지 및 CV 모델을 통해 추출된 유사 패턴 이미지 4개 로드
+  + 해당 패턴이 있는 가구 이미지 로드 <br><br>
+  + anything_site/static/style : XD를 이용해 프론트엔드 구현(.HTML, .CSS, .JS)<br><br>
+  + 참고 사항 :
+  + 패턴 이미지 4000여장(anything_site/static/DTD), 가구 이미지(anything_site/static/images), 프론트엔드 파일(anything_site/static/style) → Django의 static 파일 구조로 관리  
+  + 사용자가 업로드하는 패턴 이미지 → anything_site/media에 동적으로 저장 → Django의 media 파일 구조로 관리 
 
 ---
