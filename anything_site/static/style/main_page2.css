@@ -1,0 +1,194 @@
+#mediaViewInfo {
+	--web-view-name: main_page;
+	--web-view-id: main_page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: main_page;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#main_page {
+	position: absolute;
+	width: 3840px;
+	height: 2160px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: main_page;
+	--web-view-id: main_page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-enable-deep-linking: true;
+}
+#main_page_background {
+	position: absolute;
+	width: 3840px;
+	height: 1373px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#background_image {
+	opacity: 0.8;
+	fill: rgba(150,68,71,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.background_image {
+	overflow: visible;
+	position: absolute;
+	width: 3840px;
+	height: 1373px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Search_b {
+	position: absolute;
+	width: 1028.051px;
+	height: 95.093px;
+	left: 1406.192px;
+	top: 984.907px;
+	overflow: visible;
+}
+#Search_img_b {
+	position: absolute;
+	width: 1028.051px;
+	height: 95.093px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Search_img_ca {
+	opacity: 0.59;
+	fill: rgba(255,255,255,1);
+}
+.Search_img_ca {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 1046.051px;
+	height: 113.093px;
+	left: 0px;
+	top: 0px;
+}
+#Search_Button_b {
+	position: absolute;
+	width: 68.648px;
+	height: 62.795px;
+	left: 919.403px;
+	top: 13px;
+	overflow: visible;
+}
+#Search_Button_ca {
+	fill: rgba(255,255,255,1);
+}
+.Search_Button_ca {
+	overflow: visible;
+	position: absolute;
+	width: 68.648px;
+	height: 62.795px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#camera_image {
+	position: absolute;
+	width: 62.403px;
+	height: 63.814px;
+	left: 819px;
+	top: 13.186px;
+	overflow: visible;
+}
+#Search_input {
+	position: absolute;
+	width: 756px;
+	height: 52px;
+	left: 25px;
+	top: 13px;
+	overflow: visible;
+}
+#Search_input_b {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 757px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(255,255,255,1);
+}
+#Search_input_in{
+	position: absolute;
+	width: 756px;
+	height: 52px;
+	left: 25px;
+	top: 10px;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	border:1px solid white;
+	background-color:transparent;
+	color: rgba(255,255,255);
+	overflow: visible;
+}
+#main_title {
+	position: absolute;
+	width: 586px;
+	height: 305px;
+	left: 1627px;
+	top: 613.678px;
+	overflow: visible;
+}
+#_332 {
+	position: absolute;
+	width: 586px;
+	height: 305px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#title {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 587px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(255,255,255,1);
+	letter-spacing: -0.25px;
+}
+#main_logo_cd {
+	left: 53px;
+	top: 152px;
+	position: absolute;
+	overflow: visible;
+	width: 481px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Microsoft PhagsPa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 120px;
+	color: rgba(201,160,160,1);
+}

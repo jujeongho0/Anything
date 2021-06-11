@@ -1,0 +1,132 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+div#image_9{
+topmargin="0";  leftmargin="0"; marginwidth="0"; marginheight="0"; padding: 5%;}
+#title{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: inline-block;
+    vertical-align: top;
+	white-space: nowrap;
+    opacity: 0.8;
+    overflow: visible;
+    white-space: nowrap;
+    font-family: Microsoft PhagsPa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: rgba(150,68,71,1);
+}
+
+div#first{
+    text-align : center;
+    display: flex;
+}
+div#last{
+text-align:center;}
+div#second{
+    display: flex;
+}
+div#spe{
+display:inline-flex;
+}
+div#third{
+    display: flex;
+}
+div#searched_results{
+    display: inline-flex;
+}
+div#searched_page{
+    text-align: center;
+    font-size: 36px;
+}
+div#search-container{
+    display: inline-block;
+
+}
+div#pattern_image{
+    display: inline-flex;
+    position: absolute;
+    margin-top: 1%;
+}
+#image{
+padding: 5%;
+}
+#pattern_main{
+    margin-right: 3%;
+}
+#pattern_find{
+    display: flex;
+}
+#pattern_image_find{
+    border-radius: 30%;
+}
+#pattern_image_main{
+    border-radius: 30%;
+}
+#search{
+
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+
+}
+#container{
+text-align:center;
+}
+#Search_img_ca {
+    height: 75;
+	opacity: 0.59;
+    text-align: center;
+    fill: rgba(255,255,255,1);
+}
+.Search_img_ca {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	overflow: visible;
+    text-align: center;
+
+}
+a:link {
+  color: rgba(150,68,71,1);
+}
+a:visited {
+  color: rgba(150,68,71,1);
+}
+.Search_Button_ca {
+    margin-top: 6%;
+	fill: rgba(255,255,255,1);
+    width: 8%;
+    height: 8%;
+    overflow: visible;
+
+}
+#file{
+    display: none;
+}
+#submit{
+    display: none;
+}
+#search-input{
+    vertical-align: top;
+    margin-top: 6%;
+    margin-left: -20%;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    width: 400px;
+    height: 50px;
+    background-color:transparent;
+    border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;
+}
+#search-container{
+    text-align:center;
+}
+#Search_background{
+    margin-top: 5%;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
