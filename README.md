@@ -39,6 +39,8 @@
 
 ![KakaoTalk_20210602_230635666](https://user-images.githubusercontent.com/62659407/121678434-25341a00-caf2-11eb-84c1-3e4767bd41aa.png)
 
+<img src="https://user-images.githubusercontent.com/62659407/121678434-25341a00-caf2-11eb-84c1-3e4767bd41aa.png" width="40%">
+
 ![KakaoTalk_20210608_164205808](https://user-images.githubusercontent.com/62659407/121678565-498ff680-caf2-11eb-8458-e73701109e53.png)
 
 
