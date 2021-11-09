@@ -70,7 +70,7 @@
 <br><br>
 <img src="https://user-images.githubusercontent.com/62659407/140987773-c4f7fec6-9606-4390-844f-45a051b47c45.png" width="40%">
 <br><br>
-**가출원 **
+**가출원 등록**
 <br><br>
 <img src="https://user-images.githubusercontent.com/62659407/121677988-8efff400-caf1-11eb-8137-239e3789af4b.png" width="40%">
 <br>
