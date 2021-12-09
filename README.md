@@ -88,11 +88,13 @@
   + ikea_crawling.ipynb() : BeautifulSoup 라이브러리를 이용해 학습데이터로 사용될 텍스트 데이터를 IKEA의 [가구 설명]을 웹 크롤링<br><br>
   + NLP_BiGRU.ipynb() :
   + konlpy 라이브러이의 okt() 형태소 분석기를 이용해 텍스트 데이터 토큰화
-  + 단어의 빈도수를 이용해 텍스트 데이터 정수 인코딩
+  + 단어의 빈도수를 이용해 텍스트 데이터 정수 인코딩(상위 빈도수 1000개의 단어만 사용)
   + 텍스트 데이터 중 최장 길이로 패딩
-  + 위 과정을 거쳐 전처리된 텍스트 데이터를 Embedding()을 이용해 단어 임베딩
-  + Tensorflow 라이브러리의 Bidirectional GRU 알고리즘을 이용해 인공지능 모델 학습 및 검증
-  + 구현한 NLP 모델을 'anythingNLP.h5'로 저장
+  + 위 과정을 거쳐 전처리된 텍스트 데이터를 Embedding()을 이용해 단어 임베딩(128 차원을 가지는 임베딩 벡터 1000개(단어 집합의 크기))
+  + 'Bidirectional GRU' 모델 이용
+  + 'categorical_crossentropy' 손실함수 이용
+  + 'adam' 알고리즘 이용
+  + 구현한 NLP 인공지능을 'anythingNLP.h5'로 저장
 
 - 검증 정확도
 ```
