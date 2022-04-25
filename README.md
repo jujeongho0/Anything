@@ -11,13 +11,13 @@
 
 **개요** : 
 1. 사용자가 텍스트와 패턴 이미지 입력
-2-1. 사용자가 입력한 텍스트는 tensorflow의 Bidirectional GRU를 이용해 학습한 NLP 모델을 통해 22개의 가구 카테고리 중 가장 유사한 가구로 분류
-2-2. sklearn.neighbors.KNeighborsClassifier()를 통해 사용자가 입력한 패턴 이미지(GoogleNet 모델을 transfer learning한 CNN 모델로 feature 추출)와 기존에 가지고 있는 4000여장의 패턴 이미지 feature 중 유사한 패턴 이미지 4개 추출
-3. yolov5와 cv2.grabCut()을 이용해 2-1에서 분류된 가구의 이미지에서 배경 제거
-4. ORB 기술(Oriented FAST and Rotated BRIEF)과 BFMatcher 기술 이용해 "사용자가 입력한 패턴 이미지 + 2-2에서 추출한 4개의 유사 패턴"과 "3에서 배경이 제거된 가구 이미지"에서 다수의 비슷한 벡터가 추출된다면 해당 패턴을 가지고 있는 가구로 판단하여 추출
-5. 최종적으로, 4에서 추출한 가구 이미지들을 최종 검색 결과물로 보여줌
-6. Django를 이용해 위 과정을 웹으로 구현
-7. 웹 호스팅 서비스 Pythonanywhere를 이용해 서버 배포
+2. 사용자가 입력한 텍스트는 tensorflow의 Bidirectional GRU를 이용해 학습한 NLP 모델을 통해 22개의 가구 카테고리 중 가장 유사한 가구로 분류
+3. sklearn.neighbors.KNeighborsClassifier()를 통해 사용자가 입력한 패턴 이미지(GoogleNet 모델을 transfer learning한 CNN 모델로 feature 추출)와 기존에 가지고 있는 4000여장의 패턴 이미지 feature 중 유사한 패턴 이미지 4개 추출
+4. yolov5와 cv2.grabCut()을 이용해 2-1에서 분류된 가구의 이미지에서 배경 제거
+5. ORB 기술(Oriented FAST and Rotated BRIEF)과 BFMatcher 기술 이용해 "사용자가 입력한 패턴 이미지 + 2-2에서 추출한 4개의 유사 패턴"과 "3에서 배경이 제거된 가구 이미지"에서 다수의 비슷한 벡터가 추출된다면 해당 패턴을 가지고 있는 가구로 판단하여 추출
+6. 최종적으로, 4에서 추출한 가구 이미지들을 최종 검색 결과물로 보여줌
+7. Django를 이용해 위 과정을 웹으로 구현
+8. 웹 호스팅 서비스 Pythonanywhere를 이용해 서버 배포
 
 **22개의 가구 카테고리** :
 ```
